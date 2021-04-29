@@ -1,0 +1,275 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background: #162729;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+body{
+    background: linear-gradient(246.11deg, #0B1D21 29.1%, #0F1E21 93.48%);
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 148%;
+    letter-spacing: 0.03em;
+    color: #CCD1D1;
+}
+
+h1{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 105%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #E6E8E8;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+h3{
+    font-family: "Rockwell";
+    font-size: 32px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #E6E8E8;
+    /* border: solid red;
+    border-width: thin; */
+    }
+
+h4{
+    font-family: "Rockwell";
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #E6E8E8;
+}
+
+nav p {
+    padding: 8px;
+    margin: 16px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 31px;
+    color: #E6E8E8;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.emphasis {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.heroImg{
+    padding: 25px;
+    height: 300px;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.content{
+    margin: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 148%;
+    letter-spacing: 0.03em;
+    color: #E6E8E8;
+    padding: 16px;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.image{
+    float: left;
+    padding: 16px;
+    width: 15%;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:  #E6E8E8;
+    font-family: 'DM Mono', monospace;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 31px;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+button{
+    background: #ECB6FF;
+    font-family: 'DM Mono', monospace;
+    border-radius: 8px;
+    height: 44px;
+    width: 120px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #162729;
+    padding: 6px;
+}
+
+.minorFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+}
+
+.majorFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    margin: 16px;
+    padding: 16px;
+}
+
+.skillCard{
+    Width: 392px;
+    Height: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+    border: 0.5px solid #C858EF;
+    border-radius: 8px;
+    background-color: #C858EF, 100%;
+    box-shadow: -4px -4px 8px rgba(200, 88, 239, 0.5), 4px 4px 8px rgba(200, 88, 239, 0.5);
+}
+
+.skillCard p{
+    font-family: DM Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 148%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #CCD1D1;
+    /* border: solid red;
+    border-width: thin; */
+    margin: 16px;
+}
+
+.skillCard img{
+    margin: 0;
+    width: 80%;
+    /* border: solid red;
+    border-width: thin; */
+    border-radius: 4px;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.banner{
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: #CCD1D1;
+    font-family: Rockwell;
+    font-size: 18px;
+    border-bottom: 5px solid #C858EF;
+    align-self: flex-end;
+}
+
+.gridContainer{
+    display: grid;
+    margin: 24px;
+    padding: 16px;
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "duck basics about"
+    "dog bullet text"
+    ;
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color:#162729;
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    text-align: left;
+    font-size: 14px;
+}
+
+#duck{
+    grid-area: duck;
+    background-image: url("../images/OntheFly.png");
+}
+
+#about{
+    grid-area: about;
+}
+
+#basics{
+    grid-area: basics;
+}
+
+#bullet{
+    grid-area: bullet;
+}
+
+#dog{
+    grid-area: dog;
+    background-image: url("../images/halomockup.png");
+}
+
+#text{
+    grid-area: text;
+}
+
+@media only screen and (max-width: 600px){
+    .minorFlex{
+        flex-direction: column;
+        width: 100%;
+    }
+    .gridContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "duck"
+        "basics" 
+        "about"
+        "dog" 
+        "bullet" 
+        "text"
+        ;
+    }
+}
