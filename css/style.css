@@ -1,12 +1,290 @@
+/* This is the navigation style */
 .header{
+    background: #162729;
+    /* border: solid red;
+    border-width: thin*/
+    margin: 0px;
+}
+
+.flexSimple{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    background: #162729;
+    align-items: flex-end;
+    margin: 0px;
     /* border: solid red;
     border-width: thin; */
+}
+
+.left{
+    margin-left: 48px;
+}
+
+.right{
+    margin-right: 48px;
+}
+
+.right p{
+    padding-left: 40px;
+}
+
+nav p {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 105%;
+    color: #A6AEB0;
+    /* border: solid red;
+    border-width: thin; */
+    margin: 0;
+}
+
+.emphasis {
+    font-family: DM Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 118%;
+    text-align: left;
+    color: #E6E8E8;
+    /* border: solid red;
+    border-width: thin; */
+} 
+hr{
+    border: 0;
+    height: 1px;
+    background: #C858EF;
+    opacity: .5;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+.definedHeight{
+    height: 16px;
+}
+
+/* this is the hero content style */
+
+.hero{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "heroImg heroList heroText";
+}
+
+.heroImg{
+    grid-area: heroImg;
+    background-image: url(../images/wutahero.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 64px;
+}
+
+.heroList{
+    grid-area: heroList;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    padding: 8px;
+}
+
+.heroText{
+    grid-area: heroText;
+    align-self: center;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCD1D1;
+    text-align: right;
+    margin-right: 64px;
+}
+
+.heroItem1{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    color: #ECB6FF;
+    margin: 0;
+    line-height: 118%;
+    padding-top: 20px;
+}
+
+.heroItem2{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 118%;
+    color: #F8F8F8;
+}
+
+.heroItem3{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 118%;
+    color: #F8F8F8;
+}
+
+.heroItem4{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 118%;
+    color: #CCD1D1;
+}
+
+.heroItem5{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 118%;
+    color: #A6AEB0;
+}
+
+.heroItem6{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 118%;
+    color: #687679;
+}
+
+.dicePics{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dicePics img{
+    width: 34px;
+    height: 35px;
+    padding: 16px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.heroButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    z-index: 100;
+    background: #ECB6FF;
+    border: none;
+    border-radius: 8px;
+    width: 190px;
+    height: 60px;   
+    padding-right: 12px;
+    color: #162729; 
+}
+
+.btnText{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 92%;
+}
+
+.inertIcon{
+    background-image: url("../images/Sendsendbtn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+    padding-bottom: 4px;
+}
+
+.hoverIcon{
+    background-image: url("../images/Sendhoversendbtn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+    padding-bottom: 4px;
+}
+
+/* .heroImg{
+    padding: 25px;
+    /* height: 300px; */
+    /* border: solid red;
+    border-width: thin; 
+} */
+
+.content{
+    margin: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 148%;
+    letter-spacing: 0.03em;
+    color: #E6E8E8;
+    padding: 16px;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+.image{
+    float: left;
+    padding: 16px;
+    height: 404px;
+    width: 273px;
+    width: 15%;
+    /* border: solid red;
+    border-width: thin; */
+}
+
+
+/* below is footer style */
+
+.p1{
+    font-family: DM Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E6E8E8;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: flex-start;
 }
 
 body{
@@ -18,6 +296,7 @@ body{
     line-height: 148%;
     letter-spacing: 0.03em;
     color: #CCD1D1;
+    margin: 0;
 }
 
 h1{
@@ -56,52 +335,6 @@ h4{
     color: #E6E8E8;
 }
 
-nav p {
-    padding: 8px;
-    margin: 16px;
-    font-family: 'DM Mono', monospace;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 31px;
-    color: #E6E8E8;
-    /* border: solid red;
-    border-width: thin; */
-}
-
-.emphasis {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.heroImg{
-    padding: 25px;
-    height: 300px;
-    /* border: solid red;
-    border-width: thin; */
-}
-
-.content{
-    margin: 8px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 148%;
-    letter-spacing: 0.03em;
-    color: #E6E8E8;
-    padding: 16px;
-    /* border: solid red;
-    border-width: thin; */
-}
-
-.image{
-    float: left;
-    padding: 16px;
-    width: 15%;
-    /* border: solid red;
-    border-width: thin; */
-}
-
 .footer{
     display: flex;
     flex-direction: row;
@@ -127,6 +360,7 @@ button{
     padding: 6px;
 }
 
+
 .minorFlex{
     display: flex;
     flex-direction: row;
@@ -134,20 +368,28 @@ button{
     align-items: center;
     margin: 16px;
     padding: 16px;
+    margin-bottom: 48px;
+
 }
 
 .majorFlex{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-around;
+    align-items: space-between;
     margin: 16px;
     padding: 16px;
 }
 
+.spaceMe{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .skillCard{
-    Width: 392px;
-    Height: 322px;
+    Width: 375px;
+    Height: 300px;
+    background: #162729;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +406,7 @@ button{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    width: 80%;
     line-height: 148%;
     text-align: center;
     letter-spacing: 0.03em;
@@ -186,7 +429,7 @@ button{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 16px;
+    /* margin: 16px; */
     /* border: solid red;
     border-width: thin; */
 }
@@ -272,4 +515,34 @@ button{
         "text"
         ;
     }
+}
+
+/* THIS IS A HOVER TEST */
+/* 
+.notHover{
+    color: lightblue;
+}
+
+.hover{
+    color: red;
+}
+ */
+
+
+.notHover{
+    /* border: none; */
+    /* color: #162729; */
+}
+
+    .hover{
+    color: #C858EF;
+    /* border: 1px solid #C858EF; */
+}
+
+.notHoverCard{
+    /* this is where you'd think style would be, eh? */
+}
+
+.hoverCard{
+    background-color: #0B1D21;
 }

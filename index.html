@@ -10,46 +10,75 @@
     </head>
     <body>
         <section>
-        <nav class="header">
-            <p>UX Designer, <br> General Nerd</p>
-            <p class="emphasis">Charlotte Kane, <br> Irvine CA</p>
-            <div class="header">
-                <img src="images/Send.png">
-                <p>Contact: <br> ckane003@gmail.com</p>
+        <nav class="header flexSimple">
+            <p class="emphasis left">Charlotte Kane</p>
+            <div class="flexSimple right">
+                <p class="notHover">Portfolio</p>
+                <p class="notHover">About Me</p>
+                <p class="notHover">Resume</p>
             </div>
          </nav>
+         <div class="header definedHeight">
+            <hr>
+        </div>
         </section>
-      <section class="heroImg">
-        <div class="content">
-            <img src="images/wutahero.png" class="image">
-            <div class="majorFlex">
-             <p>Hailing from a background in creative writing, I have a deep understanding of conflict, resolution, and human motivations. </p>
-             <p>My greatest obsessions are tabletop games, puzzle solving, and science fiction. (And my cat, Jinx.)</p>
-             <p> After years spent observing humans as a bartender, I decided to turn that empathy towards human-computer interaction by taking a UX/UI Bootcamp through the University of Arizona.</p>
-             <button>Download Resume</button>
+        <br>
+        <!-- <p class="notHover">This is a HOVER TEST</p> -->
+        <br>
+      <section class="hero">
+        <div class="heroImg"></div>
+        <div class="heroList">
+            <p class="heroItem1">UX Designer</p>
+            <p class="heroItem2">UX Researcher</p>
+            <p class="heroItem3">Adventurer</p>
+            <p class="heroItem4">Author</p>
+            <p class="heroItem5">Metal-Head</p>
+            <p class="heroItem6">Nerd</p>
+            <br>
+            <br>
+        </div>
+        <div class="heroText">
+            <div class="dicePics">
+                <img src="images/D20s.png">
+                <img src="images/D10.png">
+                <img src="images/D8.png">
+                <img src="images/D6.png">
+                <img src="images/D4-1.png">
             </div>
-         </div>
-     </section>
+            <p>Charlotte is a recent graduate of the University of Arizona, where she studied UX/UI Design.  
+            She also holds a bachelors in Creative Writing, which she employs in writing absurd adventures for her DND campaign. 
+            She is also working on a science fiction mystery novel. </p>
+            <br>
+            <p>Charlotte is currently hunting for a UX Design/Research job where she can put her problem-solving & design skills to good use in creating well-researched, empathetic prototypes. </p>
+        </div>
+      </section>
+      <div class="center">
+        <button class="heroButton notHover center">
+            <div class="btnIcon inertIcon"></div>
+            <p class="btnText"> contact</p>
+        </button>
+       </div>
+       <br>
      <br>
      <div>
      <h3>My Skills</h3>
     </div>
       <!--  My UX Skills section coded using CSS flex -->
     <section class="minorFlex">
-        <div class="skillCard">
-            <h4>User <br> Research</h4>
+        <div class="skillCard notHoverCard">
+            <h4 class="spaceMe">User <br> Research</h4>
             <img src="images/Scale.png">
             <p>Creating empathy through interviews, surveys, & statistics.</p>
             <div class="display"> <p>MIRO</p><p>TESTING</p><p>ANALYTICS</p></div>
         </div>
-        <div class="skillCard">
-            <h4>Interface <br> Design</h4>
+        <div class="skillCard notHoverCard">
+            <h4 class="spaceMe"> Interface <br> Design</h4>
             <img src="images/Scale.png">
             <p>Using timeless design principles for balance & efficiency.</p>
             <div class="display"> <p>ADOBE CC</p> <p>HTML/CSS/JS</p></div>
         </div>
-        <div class="skillCard">
-            <h4>Rapid <br> Prototyping</h4>
+        <div class="skillCard notHoverCard">
+            <h4 class="spaceMe">Rapid <br> Prototyping</h4>
             <img src="images/Scale.png">
             <p>Prototyping with agile methodology to create continuous iterations.</p>
             <div class="display"> <p>FIGMA</p><p>INVISION</p><p>SPRINTS</p></div>
@@ -88,5 +117,7 @@
         <p>Work</p>
         <p>Contact</p>
      </section>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="js/index.js"></script>
  </body>
 </html>
