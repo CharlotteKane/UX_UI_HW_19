@@ -470,6 +470,10 @@ button{
     background-position: left;
     text-align: left;
     font-size: 14px;
+    border: 0.5px solid #C858EF;
+    border-radius: 8px;
+    background-color: #C858EF, 100%;
+    box-shadow: -4px -4px 8px rgba(200, 88, 239, 0.5), 4px 4px 8px rgba(200, 88, 239, 0.5);
 }
 
 #duck{
